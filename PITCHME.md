@@ -275,7 +275,11 @@ Attribute selectors select an element using the existence of a given attribute o
 * [attr=value]
  * value is exactly "value".
 * [attr~=value]
- * value is a space-separated list of words, one of them is "value". 
+ * value is a space-separated list of words, one of them is "value".
+ 
+#HSLIDE
+### selectors : attribute selectors
+
 * [attr|=value]
  * value is exactly "value" or begin with “value” immediately followed by “-”
 * [attr^=value]
@@ -284,8 +288,18 @@ Attribute selectors select an element using the existence of a given attribute o
  * value is suffixed by "value".
 * [attr*=value]
  * value has "value" as substring.
-[attr operator value i]
- * Adding an i (or I) before the closing bracket case-insensitivity
+* [attr operator value i]
+ * Add an i (or I) before the closing bracket for case-insensitivity
+
+```css
+    [lang] {text-decoration : underline;}
+    [lang="pt"] {color: red;}
+```
+```html
+    <p lang="pt">Olá</p>
+```
+
+ 
  
 #HSLIDE
 ## sample HTML document
