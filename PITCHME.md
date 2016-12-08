@@ -38,7 +38,7 @@ p {
 ```
 
 #HSLIDE
-## selectors:  class
+### selectors:  class
 class selector
  * selects node by class name
 
@@ -158,7 +158,7 @@ div + .news { color: blue; }
 ```
 
 #HSLIDE
-## selectors : siblings
+### selectors : siblings
 
 Nodes B which are preceded by nodes A (sharing a common parent)
 
@@ -168,9 +168,7 @@ A ~ B { /* style */ }
 examples
 
 ```css
-div ~ .news {
-	color: blue;
-	}
+div ~ .news { color: blue; }
 ```
 
 ```html
@@ -186,11 +184,11 @@ div ~ .news {
 ```
 
 #HSLIDE
-## selectors : pseudo-classes
+### selectors : pseudo-classes
 
 A CSS pseudo-class is a keyword added to selectors that specifies a special state of the element to be selected.
 
-For example :first-child will select those elements which are the first-children of their parents.
+* :first-child selects elements which are first-children of their parents.
 
 ```css
 selector:pseudo-class { /* style */ }
