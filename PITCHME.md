@@ -317,8 +317,12 @@ Attribute selectors select an element using the existence of a given attribute o
   <span class="hsl-value" id="hsl-a-value">1.00);</span> <input id="hsl-a" type="range" min="0" max="100" value="100" onchange="changeHSL()">
         </pre>
 
-<script id="my">
+<script type="text/javascript"id="my">
+
+alert('ola');
 function changeHSL() {
+
+
                 var h = document.getElementById('hsl-h').value * 1.0;
                 var s = document.getElementById('hsl-s').value * 1.0;
                 var l = document.getElementById('hsl-l').value * 1.0;
