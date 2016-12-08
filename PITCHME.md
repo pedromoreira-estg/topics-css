@@ -333,7 +333,6 @@ function changeHSL() {
                 document.getElementById('hsl-a-value').textContent = a + ');';
               }
 
-              changeHSL();
 </script>
             
 #HSLIDE
