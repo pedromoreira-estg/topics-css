@@ -4,7 +4,7 @@
 (C) Pedro Miguel Moreira 2016
 
 #HSLIDE
-## Syntax
+### Syntax
 fundamental syntax
 
 ```css
@@ -16,7 +16,7 @@ selector {
 ```
 
 #HSLIDE
-## selectors : element or type
+### selectors : element or type
 element selector
  * selects nodes by element name
 
@@ -59,7 +59,7 @@ examples
 
 
 #HSLIDE
-## selectors : id
+### selectors : id
 id selector
  * selects node by id
 
@@ -79,7 +79,7 @@ examples
 ```
 
 #HSLIDE
-## selectors : descendants
+### selectors : descendants
 
 Nodes Selected by B which area descendants of A
 
@@ -105,7 +105,7 @@ div .news {
 ```
 
 #HSLIDE
-## selectors : child
+### selectors : child
 
 Nodes Selected by B which are children of A
 
@@ -131,7 +131,7 @@ div>.news {
 ```
 
 #HSLIDE
-## selectors : adjacent
+### selectors : adjacent
 
 Nodes B which immediately follow Nodes A (sharing a common parent)
 (
@@ -142,9 +142,7 @@ A + B { /* style */ }
 examples
 
 ```css
-div + .news {
-	color: blue;
-	}
+div + .news { color: blue; }
 ```
 
 ```html
