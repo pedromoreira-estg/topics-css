@@ -291,15 +291,21 @@ Attribute selectors select an element using the existence of a given attribute o
 * [attr operator value i]
  * Add an i (or I) before the closing bracket for case-insensitivity
 
+ 
+#HSLIDE
+### selectors : attribute selectors
+
 ```css
     [lang] {text-decoration : underline;}
     [lang="pt"] {color: red;}
+    [lang*="BR"] {color: lime;}
+    
 ```
 ```html
-    <p lang="pt">Olá</p>
+    <p lang="pt-PT">Olá</p>
+    <p lang="pt-BR">Oi</p>
+    
 ```
-
- 
  
 #HSLIDE
 ## sample HTML document

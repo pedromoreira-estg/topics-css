@@ -3,6 +3,10 @@
     font-size: 32px !important;
 }
 
+.reveal .pre {
+    font-size: .75em !important;
+}
+
 .reveal .slides h1,h2{
     text-align: center;
 }
