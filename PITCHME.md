@@ -186,9 +186,9 @@ div ~ .news { color: blue; }
 #HSLIDE
 ### selectors : pseudo-classes
 
-A pseudo-class is a keyword added to selectors to specify a special state of the selected element.
+pseudo-class is a keyword added to selectors to specify a special state of the selected element.
 
-* :first-child selects elements which are first-children of their parents.
+`:first-child` selects elements that are first-children of their parents.
 
 ```css
 selector:pseudo-class { /* style */ }
