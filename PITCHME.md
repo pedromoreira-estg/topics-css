@@ -188,12 +188,12 @@ div ~ .news { color: blue; }
 
 pseudo-class is a keyword added to selectors to specify a special state of the selected element.
 
-`:first-child` selects elements that are first-children of their parents.
-
 ```css
 selector:pseudo-class { /* style */ }
 ```
 examples
+
+`:first-child` selects elements that are first-children of their parents.
 
 ```css
 p:first-child {font-size : 5em}
@@ -212,7 +212,7 @@ p:first-child {font-size : 5em}
 ```
 
 #HSLIDE
-## selectors : pseudo-classes
+### selectors : pseudo-classes
 ### some more pseudo-classes
 
 
@@ -227,17 +227,18 @@ p:first-child {font-size : 5em}
 | :not() | :nth-child() | :nth-last-child()
 | :nth-last-of-type() | :nth-of-type() | :only-child
 | :required | :right | :root |
-| :scope | :target | :valid|
 
 #HSLIDE
-## selectors : pseudo-elements
+### selectors : pseudo-elements
 
-As pseudo-classes, pseudo-elements are added to selectors, allowing to style parts of a element
+A pseudo-element is added to selectors, allowing to style parts of it
 
 ```css
 selector::pseudo-element { /* style */ }
 ```
 examples
+
+`:first-letter` selects the first chars of selected elements.
 
 ```css
 p::first-letter {color : magenta}
@@ -252,20 +253,40 @@ p::first-letter {color : magenta}
  </form>
 </div>
 <p class="news"> *t*hree </p>
-<p class="news"> *f*our </p>
 ```
 
 #HSLIDE
-## selectors : pseudo-elements
+### selectors : pseudo-elements
 ### some more pseudo-elements
 
 ||||
 |:---|:---|:---|
 |::after|::before|::first-letter|
 |::first-line|::selection|::backdrop|
-|::placeholder |::marker |::spelling-error | ::grammar-error 
+|::placeholder |::marker |::spelling-error |
+|::grammar-error||| 
 
+#HSLIDE
+### selectors : attribute selectors
+Attribute selectors select an element using the existence of a given attribute or attribute value.
 
+* [attr]
+ * Represents an element with an attribute name of attr (any value)
+* [attr=value]
+ * value is exactly "value".
+* [attr~=value]
+ * value is a space-separated list of words, one of them is "value". 
+* [attr|=value]
+ * value is exactly "value" or begin with “value” immediately followed by “-”
+* [attr^=value]
+ * value is prefixed by "value".
+* [attr$=value]
+ * value is suffixed by "value".
+* [attr*=value]
+ * value has "value" as substring.
+[attr operator value i]
+ * Adding an i (or I) before the closing bracket case-insensitivity
+ 
 #HSLIDE
 ## sample HTML document
 #### layout structure
