@@ -309,7 +309,7 @@ Attribute selectors select an element using the existence of a given attribute o
 ```
  
 #HSLIDE
-## sample HTML document
+### color values
 <pre>color: <b>hsla</b>(
   <span class="hsl-value" id="hsl-h-value">277,</span> <input id="hsl-h" type="range" min="0" max="360" value="128" onchange="changeHSL()">
   <span class="hsl-value" id="hsl-s-value">37%,</span> <input id="hsl-s" type="range" min="0" max="100" value="75" onchange="changeHSL()">
@@ -317,6 +317,25 @@ Attribute selectors select an element using the existence of a given attribute o
   <span class="hsl-value" id="hsl-a-value">1.00);</span> <input id="hsl-a" type="range" min="0" max="100" value="100" onchange="changeHSL()">
         </pre>
 
+<script>
+function changeHSL() {
+                var h = document.getElementById('hsl-h').value * 1.0;
+                var s = document.getElementById('hsl-s').value * 1.0;
+                var l = document.getElementById('hsl-l').value * 1.0;
+                var a = (document.getElementById('hsl-a').value / 100).toFixed(2);
+                var el = document.getElementById('hsl-example');
+
+                el.style.color = 'hsla(' + h + ', ' + s + '%, ' + l + '%, ' + a + ')';
+
+                document.getElementById('hsl-h-value').textContent = h + ',';
+                document.getElementById('hsl-s-value').textContent = s + '%,';
+                document.getElementById('hsl-l-value').textContent = l + '%,';
+                document.getElementById('hsl-a-value').textContent = a + ');';
+              }
+
+              changeHSL();
+</script>
+            
 #HSLIDE
 ## sample HTML document
 #### tree
