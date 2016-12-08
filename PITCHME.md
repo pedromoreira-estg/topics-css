@@ -297,20 +297,25 @@ Attribute selectors select an element using the existence of a given attribute o
 
 ```css
     [lang] {text-decoration : underline;}
-    [lang="pt"] {color: red;}
-    [lang*="BR"] {color: lime;}
-    
+    p[lang="pt"] {color: red;}
+    p[lang*="BR"] {color: lime;}
+    a[href$=pdf]::after {content: " (PDF)";}
 ```
+
 ```html
     <p lang="pt-PT">Olá</p>
     <p lang="pt-BR">Oi</p>
-    
+    <a href="manual.pdf">Manual de PT </a>    
 ```
  
 #HSLIDE
 ## sample HTML document
-#### layout structure
-<img src="html-boxes.svg.png" alt="Drawing" style="width: 400px;"/>
+<pre>color: <b>hsla</b>(
+  <span class="hsl-value" id="hsl-h-value">277,</span> <input id="hsl-h" type="range" min="0" max="360" value="128" onchange="changeHSL()">
+  <span class="hsl-value" id="hsl-s-value">37%,</span> <input id="hsl-s" type="range" min="0" max="100" value="75" onchange="changeHSL()">
+  <span class="hsl-value" id="hsl-l-value">33%,</span> <input id="hsl-l" type="range" min="0" max="100" value="33" onchange="changeHSL()">
+  <span class="hsl-value" id="hsl-a-value">1.00);</span> <input id="hsl-a" type="range" min="0" max="100" value="100" onchange="changeHSL()">
+        </pre>
 
 #HSLIDE
 ## sample HTML document
