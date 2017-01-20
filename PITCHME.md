@@ -1,7 +1,7 @@
 #HSLIDE
 ## CSS
 ### Cascading Style Sheets
-(C) Pedro Miguel Moreira 2016
+(C) Pedro Miguel Moreira 2016-2017
 
 #HSLIDE
 ### Syntax
