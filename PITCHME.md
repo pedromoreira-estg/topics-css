@@ -333,14 +333,12 @@ example:  styles
 @media screen, print {
   body { line-height: 1.2 }
 }
-
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     body { line-height: 1.4 }
 }
-
 ```
 #HSLIDE
 #### disclaimer
